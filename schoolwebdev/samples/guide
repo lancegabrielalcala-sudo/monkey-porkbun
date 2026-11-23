@@ -1,0 +1,5 @@
+flexbox ---
+display: flex affects the children inside an element, not necessarily the element itself
+justify-content / controls horizontal alignment
+align-items / controls vertical alignment 
+gap / controls spacing between elements

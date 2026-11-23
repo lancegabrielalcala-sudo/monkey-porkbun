@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 90% 10%, rgba(244, 185, 66, 0.12), transparent 24rem),
+        linear-gradient(145deg, #10231b 0%, #17372a 100%);
+    color: #1f2933;
+}
+
+.heading-box1 {
+    margin-bottom: 24px;
+    padding: 34px clamp(24px, 6vw, 64px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    background: rgba(20, 47, 36, 0.88);
+    text-align: center;
+}
+
+.heading-box1 h1 {
+    margin: 0;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    line-height: 1.05;
+}
+
+.body1 {
+    padding: clamp(28px, 5vw, 56px);
+    border-radius: 18px;
+    background: #fbfcfa;
+    box-shadow: 0 20px 50px rgba(5, 20, 15, 0.18);
+}
+
+.body1 + .body1 {
+    margin-top: 24px;
+}
+
+.body1 h2,
+.chart-section h2 {
+    margin: 0;
+    color: #17372a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.7rem, 4vw, 2.3rem);
+}
+
+.body1 p {
+    max-width: 760px;
+    margin: 20px auto 0;
+    color: #46554e;
+    font-size: 1.05rem;
+}
+
+.chart-section {
+    margin-top: 24px;
+    padding: clamp(28px, 5vw, 48px);
+    border-radius: 18px;
+    background: #fbfcfa;
+    box-shadow: 0 20px 50px rgba(5, 20, 15, 0.18);
+    text-align: center;
+}
+
+.chart-section > p {
+    margin: 8px 0 0;
+    color: #6b7771;
+}
+
+.chart-container {
+    max-width: 780px;
+    margin: 24px auto 0;
+    padding: clamp(14px, 3vw, 24px);
+    border: 1px solid #e6ebe8;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.stat-card {
+    padding: 22px;
+    border: 1px solid #e6ebe8;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.stat-card strong {
+    display: block;
+    color: #17372a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    line-height: 1;
+}
+
+.stat-card span {
+    display: block;
+    margin-top: 8px;
+    color: #64736b;
+    font-size: 0.88rem;
+}
+
+@media (max-width: 700px) {
+    .page-shell {
+        width: min(100% - 20px, 1120px);
+        padding: 20px 0;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
